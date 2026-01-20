@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Hisab</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="intro-container">
+        <div class="coin-wrapper">
+            <div class="coin"></div>
+        </div>
+        <h1 class="app-title">Apna Hisab</h1>
+        <div class="loading-bar-container">
+            <div class="loading-bar" id="progressBar"></div>
+        </div>
+    </div>
+
+    <script>
+        // Simple redirect after animation
+        const progressBar = document.getElementById('progressBar');
+        progressBar.addEventListener('animationend', () => {
+            window.location.href = 'language.html';
+        });
+    </script>
+</body>
+</html>
